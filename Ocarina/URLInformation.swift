@@ -251,7 +251,7 @@ public class URLInformation: NSCoding, Equatable {
         self.title = aDecoder.decodeObject(forKey: "title") as? String
         self.descriptionText = aDecoder.decodeObject(forKey: "description") as? String
         self.imageURL = aDecoder.decodeObject(forKey: "imageURL") as? URL
-        self.imageSize = aDecoder.decodeCGSize(forKey: "imageSize")
+        self.imageSize = aDecoder.decodeSize(forKey: "imageSize")
         self.appleTouchIconURL = aDecoder.decodeObject(forKey: "appleTouchIconURL") as? URL
         self.faviconURL = aDecoder.decodeObject(forKey: "faviconURL") as? URL
         self.twitterCard = aDecoder.decodeObject(forKey: "twitterCard") as? TwitterCardInformation
